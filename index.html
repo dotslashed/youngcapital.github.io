@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YoungCapital at Github</title>
+  <link href="https://cdn.youngcapital.nl/style-guide/external/latest/style.css" rel="stylesheet" />
+  <link href="https://cdn.youngcapital.nl/style-guide/icons/latest/style.css" rel="stylesheet" />
+  <script src="/loadPresentations.js"></script>
+</head>
+<body>
+  <div class="ribbon ribbon--homepage">
+    <div class="ribbon__image" style="background-image: url('https://youngcapital-uploads-production.s3.amazonaws.com/uploads/ribbon_image/image/0000/0012/header12.jpg')">
+    </div>
+    <div class="ribbon__container container container-fluid">
+      <h1 class="ribbon__heading">
+        <span class="text--brand">YoungCapital</span> at Github
+      </h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card card--top card--full-width">
+          <div class="card__body">
+            <h3>Welcome!</h3>
+            <p>On here you can find the techtalks that have been given at YoungCapital with a link to YouTube and to the presentation if available!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="presentations-container">
+    </div>
+  </div>
+  <!-- Templates -->
+  <template id="presentation">
+    <div class="col-xs-12 col-md-4">
+      <div class="card card--slim">
+        <div class="card__heading">
+          <h3 data-template="name">Presentationname</h3>
+        </div>
+        <div class="card__body">
+          <p data-template="description">A little description text about the presentation</p>
+        </div>
+
+        <a data-template="video-link" class="card__body pt-3x pb-3x flex-row between-xs" target="_blank">
+          <h3 class="text--bold">Link to Video</h3>
+          <i class="nyc-icon nyc-icon-arrow-right"></i>
+        </a>
+        <a data-template="presentation-link" class="card__body pt-3x pb-3x flex-row between-xs" target="_blank">
+          <h3 class="text--bold">Link to Presentation</h3>
+          <i class="nyc-icon nyc-icon-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </template>
+</body>
+</html>
